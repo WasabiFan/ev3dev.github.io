@@ -1,11 +1,13 @@
 markdown: kramdown
 permalink: pretty
 exclude: [README.md, Gemfile, Gemfile.lock, repo-metadata.html]
+repository: ev3dev/ev3dev.github.io
 
 gems:
   - jekyll-mentions
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-github-metadata
 
 defaults:
   -
