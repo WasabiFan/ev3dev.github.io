@@ -1,6 +1,6 @@
 ---
 title: "Get Help"
-redirect_from: /issues/index.html
+#redirect_from: /issues/index.html
 ---
 
 * Table of Contents

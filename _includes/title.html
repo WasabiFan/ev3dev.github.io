@@ -5,7 +5,7 @@
         {% assign edit_path = edit_path | append: '#L' | append: source_line %}
     {% endif %}
 {% elsif page.path contains 'docs/' %}
-    {% assign edit_path = site.github.repository_url | append: '/edit/master/' | append: page.path %}
+    {% assign edit_path = site-repo-url | append: '/edit/master/' | append: page.path %}
 {% elsif page.path contains 'news/' %}
     {% assign show_news_link = 1 %}
 {% endif %}
@@ -17,7 +17,7 @@
         {% if edit_path %}
             <a class="btn btn-primary pull-right" href="{{ edit_path }}">Edit on Github</a>
         {% elsif show_news_link %}
-            <a class="btn btn-primary pull-right" href="{{ site.github.url }}/news/atom.xml">Subscribe via Atom</a>
+            <a class="btn btn-primary pull-right" href="{{ site-base-url }}/news/atom.xml">Subscribe via Atom</a>
         {% endif %}
     </h1>
 </div>

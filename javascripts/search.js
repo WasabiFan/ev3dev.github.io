@@ -76,7 +76,7 @@ function loadSearchData(callback) {
         return;
 
     dataLoading = true;
-    $.getJSON("{{ site.github.url }}/search-index.json", function (e) {
+    $.getJSON("{{ site-base-url }}/search-index.json", function (e) {
         dataLoading = false;
         searchData = e.slice(0, -1);
 

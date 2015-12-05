@@ -6,6 +6,9 @@ gems:
   - jekyll-mentions
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-github-metadata
+
+repository: ev3dev/ev3dev.github.io
 
 defaults:
   -

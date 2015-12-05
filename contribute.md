@@ -1,6 +1,6 @@
 ---
 title: Contribute
-redirect_from: /contributing/index.html
+#redirect_from: /contributing/index.html
 ---
 
 * Table of Contents

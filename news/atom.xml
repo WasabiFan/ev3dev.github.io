@@ -6,10 +6,10 @@ layout:
 <feed xmlns="http://www.w3.org/2005/Atom">
  
   <title>ev3dev News Feed</title>
-  <link href="{{ site.github.url }}"/>
-  <link type="application/atom+xml" rel="self" href="{{ site.github.url }}/news/atom.xml"/>
+  <link href="{{ site-base-url }}"/>
+  <link type="application/atom+xml" rel="self" href="{{ site-base-url }}/news/atom.xml"/>
   <updated>{{ site.time | date_to_rfc822 }}</updated>
-  <id>{{ site.github.url }}/news/atom.xml</id>
+  <id>{{ site-base-url }}/news/atom.xml</id>
   <author>
     <name>The ev3dev team</name>
   </author>
@@ -17,8 +17,8 @@ layout:
   {% for post in site.posts %}
   {% if post.categories contains "news" %}
   <entry>
-    <id>{{ site.github.url }}{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="{{ site.github.url }}{{ post.url }}"/>
+    <id>{{ site-base-url }}{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="{{ site-base-url }}{{ post.url }}"/>
     <title>{{ post.title | xml_escape }}</title>
     <updated>{{ post.date | date_to_rfc822 }}</updated>
     <author>
