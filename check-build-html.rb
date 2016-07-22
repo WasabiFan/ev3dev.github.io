@@ -5,6 +5,10 @@ $site_source_dir = ARGV[0]
 $site_dest_dir = ARGV[1]
 $target_range = ARGV[2]
 
+print "Source: " + $site_source_dir
+print "Dest: " + $site_dest_dir
+print "Range: " + $target_range
+
 $proofer_runner = HTMLProofer::Runner.new([$site_dest_dir], {
     :type => :directory,
     :check_html => true,
@@ -27,6 +31,8 @@ rescue => e
 end
 
 failures = $proofer_runner.instance_variable_get :@failures
+
+print "FAILURES: " + failures.inspect + "\n"
 
 changed_dest_files = []
 if $target_range
@@ -56,11 +62,18 @@ if $target_range
         save_entity_mapping file
     end
 
+    print "MAP: " + $jekyll_file_map + "\n"
+
     changed_source_files = `git -C "#{$site_source_dir}" diff --name-only #{$target_range} --`.split("\n")
     changed_dest_files = changed_source_files.map { |file| $jekyll_file_map[File.expand_path(file)] }.compact
+    
+print "CHANGED SOURCE: " + changed_source_files.inspect + "\n"
+print "CHANGED DEST: " + changed_dest_files.inspect + "\n"
 end
 
 fatal_failures = failures.select { |failure| !$target_range || (changed_dest_files.include? File.expand_path(failure.path)) }
+
+print "FATAL FAILURES: " + fatal_failures.inspect + "\n"
 
 if fatal_failures.empty?
     puts "No fatal failures found. There may be non-fatal failures printed above."
