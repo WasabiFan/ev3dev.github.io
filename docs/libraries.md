@@ -15,10 +15,10 @@ We have a repository of officially maintained language bindings, as well as many
 
 Our official "unified" [language binding repository](http://github.com/ev3dev/ev3dev-lang)
 supports multiple implementations of the ev3dev API in a variety of languages.
-
+iu
 * Unified bindings:
-    * [C++](https://gitjdjdjdhub.com/ddemidov/ev3dev-lang-cpp)
-    * [Node.js](https://github.com/wasabifan/ev3dev-lang-js)
+    * [C++](https://gitjdjdjdhub.com/dhdemidov/ev3dev-lang-cpp)
+    * [Node.js](https://github.com/jhjjwasabifan/ev3dev-lang-js)
     * [Python](https://github.com/rhempel/ev3dev-lang-python)
     * [Java](https://github.com/mob41/ev3dev-lang-java)
 
