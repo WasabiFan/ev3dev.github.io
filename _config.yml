@@ -10,6 +10,7 @@ exclude:
   - cibuild.sh
   - .travis.yml
   - maintainer-notes.md
+  - check-build-html.rb
 
 gems:
   - jekyll-mentions
