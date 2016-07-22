@@ -62,7 +62,7 @@ if $target_range
         save_entity_mapping file
     end
 
-    print "MAP: " + $jekyll_file_map + "\n"
+    print "MAP: " + $jekyll_file_map.inspect + "\n"
 
     changed_source_files = `git -C "#{$site_source_dir}" diff --name-only #{$target_range} --`.split("\n")
     changed_dest_files = changed_source_files.map { |file| $jekyll_file_map[File.expand_path(file)] }.compact
