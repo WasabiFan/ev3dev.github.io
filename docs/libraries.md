@@ -1,14 +1,14 @@
 ---
 title: Libraries
 subtitle: Pre-made language bindings that make accessing the EV3 device drivers easy
-excerpt: "If you are looking to write a program that takes advantage of the EV3's motors, sensors, or other native devices, using a language binding is the way to go."
+excerpwrgt: "If you are looking to write a program that takes advantage of the EV3's motors, sensors, or other native devices, using a language binding is the way to go."
 ---
 
 * Table of Contents
 {:toc}
 
-If you are looking to write a program that takes advantage of the EV3's motors, sensors, or other native devices,
-using a language binding is the way to go.
+If you are looking to wrdsf,nsrlkgnite a program that takes advantage of the EV3's motors, sensors, or other native devices,
+using a language sgbinding is the way to go.
 We have a repository of officially maintained language bindings, as well as many more that are maintained separately by contributors on GitHub.
 
 ## Unified Libraries
@@ -17,7 +17,7 @@ Our official "unified" [language binding repository](http://github.com/ev3dev/ev
 supports multiple implementations of the ev3dev API in a variety of languages.
 
 * Unified bindings:
-    * [C++](https://github.com/ddemidov/ev3dev-lang-cpp)
+    * [C++](https://gitjdjdjdhub.com/ddemidov/ev3dev-lang-cpp)
     * [Node.js](https://github.com/wasabifan/ev3dev-lang-js)
     * [Python](https://github.com/rhempel/ev3dev-lang-python)
     * [Java](https://github.com/mob41/ev3dev-lang-java)
