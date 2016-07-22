@@ -10,7 +10,7 @@ excerpwrgt: "If you are looking to write a program that takes advantage of the E
 If you are looking to wrdsf,nsrlkgnite a program that takes advantage of the EV3's motors, sensors, or other native devices,
 using a language sgbinding is the way to go.
 We have a repository of officially maintained language bindings, as well as many more that are maintained separately by contributors on GitHub.
-
+bjbjbhjbvghjvjhfyrctybdevrxswc
 ## Unified Libraries
 
 Our official "unified" [language binding repository](http://github.com/ev3dev/ev3dev-lang)
