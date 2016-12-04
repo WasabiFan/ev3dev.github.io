@@ -26,33 +26,13 @@ fi
 echo "Building site ------------------------------------"
 bundle exec jekyll build --trace
 
-if [ "$TRAVIS" == "true" ]; then
-    # Travis has issues with https, so we have to ignore quite a few extra sites
-
-    # credit: code snippet borrowed from jekyllrb.com website source
-    IGNORE_HREFS=$(ruby -e 'puts %w{
-        example.com
-        https:\/\/github\.com\/myuser\/myrepo
-        .*revolds-whitepaper\.pdf
-        https:\/\/github.com\/ev3dev\/ev3dev\.github\.io\/edit\/.*
-        robosnap.net
-        warmcat.com
-        01.org
-        alldatasheet.com
-        kernel\.org
-        lab\.open-roberta\.org
-        questforspace\.com
-        bountysource\.com
-    }.map{|h| "/#{h}/"}.join(",")')
-else
-    # credit: code snippet borrowed from jekyllrb.com website source
-    IGNORE_HREFS=$(ruby -e 'puts %w{
-        example.com
-        https:\/\/github\.com\/myuser\/myrepo
-        https:\/\/github.com\/ev3dev\/ev3dev\.github\.io\/edit\/.*
-        robosnap.net
-    }.map{|h| "/#{h}/"}.join(",")')
-fi
+# credit: code snippet borrowed from jekyllrb.com website source
+IGNORE_HREFS=$(ruby -e 'puts %w{
+    example.com
+    https:\/\/github\.com\/myuser\/myrepo
+    https:\/\/github.com\/ev3dev\/ev3dev\.github\.io\/edit\/.*
+    robosnap.net
+}.map{|h| "/#{h}/"}.join(",")')
 
 # Explanation of ignored sites:
 # - example.com and github.com/myuser/myrepo are fake/example links
