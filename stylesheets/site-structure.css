@@ -1,0 +1,95 @@
+.pull-right { margin-left: 20px; }
+
+.pull-left { margin-right: 20px; }
+
+#brand-logo { height: calc(100% + 8px); margin-top: -4px; }
+
+.navbar-brand { padding-top: 18px; padding-bottom: 18px; background-color: rgba(0, 0, 0, 0.12) !important; }
+
+.dropdown-toggle { cursor: pointer; }
+
+.heading-icon { margin-right: 8px; }
+
+.external-link-nav-icon { margin-left: 6px; font-size: smaller; }
+
+.alert span.glyphicon, .panel span.glyphicon, .btn span.glyphicon { margin-right: 8px; }
+
+#footer { margin-top: 40px; margin-bottom: 50px; text-align: center; color: #696969; }
+
+@media all and (min-width: 992px) { .navbar-nav .dropdown:hover .dropdown-menu { display: block; margin-top: 0; } }
+body { padding-top: 40px; }
+
+@media (max-width: 1199px) { padding-top: 0; }
+h2.panel-title { font-size: 20px; }
+
+.rounded-panel { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+
+.font-light { font-weight: lighter; }
+
+.screenshot { display: table; margin: 20px auto; text-align: center; }
+
+.screenshot > a > img { max-height: 480px; }
+
+.inline-screenshot { max-width: 350px; }
+
+.inline-screenshot img { max-width: 350px; }
+
+sup[id]:before { display: inline-block; }
+
+.table-indexed > tbody th { background-color: #2f2f2f; }
+
+.table-indexed > thead > tr, .table-indexed > tbody > tr:nth-of-type(2n+0) { background-color: #3d3d3d; }
+
+.table-indexed > tbody > tr:nth-of-type(2n+1) { background-color: transparent; }
+
+dd { margin-bottom: 20px; }
+
+dd ol, dd ul { margin-top: 10px; }
+
+ul + p, ol + p { margin-top: 10.5px; }
+
+.cclicense { text-align: center; color: #696969; }
+
+.xl-button-text { font-size: 22px; }
+
+.download-button-container { text-decoration: none !important; cursor: pointer; touch-action: manipulation; }
+.download-button-container * { pointer-events: none; }
+.download-button-container:focus .download-button-upper, .download-button-container.focus .download-button-upper { background-color: #ae4b1e; border-color: #6d2f13; }
+.download-button-container:focus .download-button-lower, .download-button-container.focus .download-button-lower { background-color: #343333; border-color: #1f1f1f; }
+.download-button-container:hover .download-button-upper { background-color: #ae4b1e; border-color: #a6471c; }
+.download-button-container:hover .download-button-lower { background-color: #343333; border-color: #2f2e2e; }
+.download-button-container:active .download-button-upper, .download-button-container.active .download-button-upper, .open > .download-button-container.dropdown-toggle .download-button-upper { background-color: #ae4b1e; border-color: #a6471c; }
+.download-button-container:active .download-button-lower, .download-button-container.active .download-button-lower, .open > .download-button-container.dropdown-toggle .download-button-lower { background-color: #343333; border-color: #2f2e2e; }
+.download-button-container:active:hover .download-button-upper, .download-button-container:active:focus .download-button-upper, .download-button-container:active.focus .download-button-upper, .download-button-container.active:hover .download-button-upper, .download-button-container.active:focus .download-button-upper, .download-button-container.active.focus .download-button-upper, .open > .download-button-container.dropdown-toggle:hover .download-button-upper, .open > .download-button-container.dropdown-toggle:focus .download-button-upper, .open > .download-button-container.dropdown-toggle.focus .download-button-upper { background-color: #903e18; border-color: #6d2f13; }
+.download-button-container:active:hover .download-button-lower, .download-button-container:active:focus .download-button-lower, .download-button-container:active.focus .download-button-lower, .download-button-container.active:hover .download-button-lower, .download-button-container.active:focus .download-button-lower, .download-button-container.active.focus .download-button-lower, .open > .download-button-container.dropdown-toggle:hover .download-button-lower, .open > .download-button-container.dropdown-toggle:focus .download-button-lower, .open > .download-button-container.dropdown-toggle.focus .download-button-lower { background-color: #252424; border-color: #1f1f1f; }
+.download-button-container.disabled .download-button-upper, .download-button-container.disabled:hover .download-button-upper, .download-button-container.disabled:focus .download-button-upper, .download-button-container.disabled.focus .download-button-upper, .download-button-container.disabled:active .download-button-upper, .download-button-container.disabled.active .download-button-upper, .download-button-container[disabled] .download-button-upper, .download-button-container[disabled]:hover .download-button-upper, .download-button-container[disabled]:focus .download-button-upper, .download-button-container[disabled].focus .download-button-upper, .download-button-container[disabled]:active .download-button-upper, .download-button-container[disabled].active .download-button-upper, fieldset[disabled] .download-button-container .download-button-upper, fieldset[disabled] .download-button-container:hover .download-button-upper, fieldset[disabled] .download-button-container:focus .download-button-upper, fieldset[disabled] .download-button-container.focus .download-button-upper, fieldset[disabled] .download-button-container:active .download-button-upper, fieldset[disabled] .download-button-container.active .download-button-upper { background-color: #da5e25; border-color: #da5e25; }
+.download-button-container.disabled .download-button-lower, .download-button-container.disabled:hover .download-button-lower, .download-button-container.disabled:focus .download-button-lower, .download-button-container.disabled.focus .download-button-lower, .download-button-container.disabled:active .download-button-lower, .download-button-container.disabled.active .download-button-lower, .download-button-container[disabled] .download-button-lower, .download-button-container[disabled]:hover .download-button-lower, .download-button-container[disabled]:focus .download-button-lower, .download-button-container[disabled].focus .download-button-lower, .download-button-container[disabled]:active .download-button-lower, .download-button-container[disabled].active .download-button-lower, fieldset[disabled] .download-button-container .download-button-lower, fieldset[disabled] .download-button-container:hover .download-button-lower, fieldset[disabled] .download-button-container:focus .download-button-lower, fieldset[disabled] .download-button-container.focus .download-button-lower, fieldset[disabled] .download-button-container:active .download-button-lower, fieldset[disabled] .download-button-container.active .download-button-lower { background-color: #464545; border-color: #464545; }
+.download-button-container .download-button-upper { font-weight: bold; }
+.download-button-container .download-button-lower { background-color: #464545; color: white; padding-top: 4px; padding-bottom: 4px; }
+.download-button-container .download-button-lower .badge { color: #464545; background-color: white; padding: 2px 5px; }
+.download-button-container.btn-group-lg .download-button-upper { font-size: 25px; }
+.download-button-container.btn-group-lg .download-button-lower { font-size: 85%; height: 30px; }
+.download-button-container.btn-group-lg .download-button-lower .badge { font-size: 11px; margin-right: -10px; margin-left: 10px; }
+.download-button-container.btn-group-md .download-button-upper { font-size: 17px; }
+.download-button-container.btn-group-md .download-button-lower { font-size: 75%; height: 25px; }
+.download-button-container.btn-group-md .download-button-lower .badge { font-size: 10px; margin-right: -10px; margin-left: 10px; }
+
+.margin-top-xs { margin-top: 0.5rem; }
+
+.margin-bottom-xs { margin-bottom: 0.5rem; }
+
+.margin-top-sm { margin-top: 1rem; }
+
+.margin-bottom-sm { margin-bottom: 1rem; }
+
+.margin-top-md { margin-top: 1.5rem; }
+
+.margin-bottom-md { margin-bottom: 1.5rem; }
+
+.margin-top-lg { margin-top: 2rem; }
+
+.margin-bottom-lg { margin-bottom: 2rem; }
+
+.margin-top-xl { margin-top: 2.5rem; }
+
+.margin-bottom-xl { margin-bottom: 2.5rem; }
